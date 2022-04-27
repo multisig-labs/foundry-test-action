@@ -7,4 +7,4 @@ if [[ "$@" == *"-w"* ]] || [[ "$@" == *"--watch"* ]]; then
   exit 1
 fi
 
-forge test $@
+forge test "$@"
