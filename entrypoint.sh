@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # if watch or -w is passed at all
 # exit with an error code
