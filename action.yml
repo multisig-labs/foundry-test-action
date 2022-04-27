@@ -2,11 +2,14 @@ name: "Foundry Test"
 description: "Run Forge solidity tests"
 inputs:
   args:
-    type: string
     default: ""
+    required: false
     description: "Arguments to pass to the test command"
 runs:
   using: docker
   image: Dockerfile
   args:
     - $${{ inputs.args }}
+branding:
+  color: "red"
+  icon: file-text
