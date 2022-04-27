@@ -1,0 +1,20 @@
+name: "Test Solidity"
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: "Test Solidity"
+    steps:
+      - name: "Checkout Recursively"
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: "Run Forge"
+        uses: ./
